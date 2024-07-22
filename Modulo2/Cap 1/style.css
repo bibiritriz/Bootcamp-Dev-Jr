@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -17,20 +17,20 @@ body {
   background-color: #FFECCE;
 }
 
-.traffic-light{
+.traffic-light {
   padding: 1rem 0.5rem;
   margin-top: auto;
   background-color: black;
 }
 
-.panel{
+.panel {
   display: flex;
   flex-direction: column;
   background-color: #808080;
   padding: 0.2rem;
 }
 
-button{
+button {
   background-color: #1D0C1F;
   border: none;
   border-radius: 3px;
@@ -44,12 +44,13 @@ button{
   text-decoration: none;
 }
 
-button:hover{
+button:hover {
   background-color: #431c47;
   transition: 0.5s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.light{
+.light {
   border: 5px solid black;
   padding: 2rem;
   border-radius: 40rem;
@@ -57,18 +58,18 @@ button:hover{
   margin: 0.4rem;
 }
 
-.red-light{
+.red-light {
   background-color: #ff0000;
 }
 
-.yellow-light{
+.yellow-light {
   background-color: #ffd500;
 }
 
-.green-light{
+.green-light {
   background-color: #99ff00;
 }
 
-.light-off{
+.light-off {
   background-color: #3E3E3E;
 }
