@@ -5,23 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"  href="icon_calculadora.svg" type="svg">
 </head>
 
 <body>
-  <div>
-    <div>
-      <h1>
-        Calculadora
-      </h1>
-      <input type="number">
-      <input type="number">
-      <button>
-        Somar
-      </button>
-      <input readonly>
-    </div>
-    <div>
-
+  <div class="container">
+    <div class="flex-container">
+      <div class="calculadora">
+        <h1>
+          Calculadora
+        </h1>
+        <input type="number" placeholder="Digite um número">
+        <input type="number" placeholder="Digite um número">
+        <div class="botoes">
+           <button>
+            +
+          </button>
+          <button>
+            +
+          </button>
+          <button>
+            +
+          </button>
+          <button>
+            +
+          </button>
+        </div> 
+          <input id="saida" readonly>  
+      </div>
+      <div class="historico">
+        <h1>
+          <span>
+            Histórico:
+          </span>
+        </h1>
+      </div>
     </div>
   </div>
 </body>
