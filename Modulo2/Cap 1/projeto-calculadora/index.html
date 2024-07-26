@@ -14,21 +14,23 @@
     <div class="flex-container">
       <div class="calculadora">
         <h1>
-          Calculadora
+          <span>
+            Calculadora
+          </span>
         </h1>
         <input type="number" placeholder="Digite um número" id="num1">
         <input type="number" placeholder="Digite um número" id="num2">
         <div class="botoes">
-          <button onclick="calc('soma')">
+          <button onclick="calc('+')">
             +
           </button>
-          <button onclick="calc('sub')">
+          <button onclick="calc('-')">
             -
           </button>
-          <button onclick="calc('mult')">
+          <button onclick="calc('x')">
             x
           </button>
-          <button onclick="calc('div')">
+          <button onclick="calc('/')">
             /
           </button>
         </div> 
@@ -36,10 +38,14 @@
       </div>
       <div class="historico">
         <h1>
-          <span>
-            Histórico:
-          </span>
+          Histórico
         </h1>
+          10 últimas operações realizadas:
+          <div id="historico">
+          </div>    
+        </div>
+      </div>
+      </div>
       </div>
     </div>
   </div>

@@ -1,6 +1,7 @@
 * {
   font-family: Arial, sans-serif;
-  color: #333;
+  color: white;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -12,11 +13,11 @@ body{
 
 .container{
   border-radius: 5px;
-  width: 800px;
+  width: 750px;
   margin: auto;
   overflow: hidden;
   background-color: rgb(244, 245, 247);
-  padding: 1rem 5rem;
+  padding: 1.5rem 2rem;
 }
 
 .flex-container{
@@ -29,21 +30,22 @@ h1{
   text-align: center;
   margin: 0.4rem;
   span{
-    color: white;
+    color: black;
   }
 }
 
 .calculadora{
   background-color: white;
   padding: 1rem;
-  width: 42%;
+  width: 270px;
   border-radius: 5px;
   box-shadow: 0 0 10px #959595;
 }
 
 .historico{
+  text-align: right;
   color: white;
-  width: 58%;
+  width: 320px;
   padding: 1rem;
   border-radius: 5px;
   background-color: rgb(0, 0, 0);
@@ -51,6 +53,8 @@ h1{
 }
 
 input{
+  color: #333;
+  text-align: right;
   background-color: #f0f0f0;
   width: 90%;
   margin: .8rem;
