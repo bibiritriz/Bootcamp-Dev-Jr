@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"  href="icon_calculadora.svg" type="svg">
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex-container">
+      <div class="calculadora">
+        <h1>
+          <span>
+            Calculadora
+          </span>
+        </h1>
+        <input type="number" placeholder="Digite um número" id="num1">
+        <input type="number" placeholder="Digite um número" id="num2">
+        <div class="botoes">
+          <button onclick="calc('+')">
+            +
+          </button>
+          <button onclick="calc('-')">
+            -
+          </button>
+          <button onclick="calc('x')">
+            x
+          </button>
+          <button onclick="calc('/')">
+            /
+          </button>
+        </div> 
+          <input id="saida" readonly>  
+      </div>
+      <div class="historico">
+        <h1>
+          Histórico
+        </h1>
+          10 últimas operações realizadas:
+          <div id="historico">
+          </div>    
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
