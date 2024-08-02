@@ -13,11 +13,95 @@
   </head>
 
   <body>
-    <header class="text-center display-4 bg-light">Cadastro de Produtos</header>
-    <main class="container">
-      <section class="display-6">Formulário de Cadastro:</section>
-      <hr>
-      <section class="display-6">Produtos de Cadastro:</section>
+    <header class="text-center display-5 bg-light">Cadastro de Produtos</header>
+    <main class="container mt-3">
+      <section>
+        <div class="display-6">Formulário de Cadastro:</div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <form>
+              <div class="row mb-3 mt-3">
+                <label for="inputName" class="col-sm-2 col-form-label"
+                  >Nome</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" />
+                </div>
+              </div>
+              <div class="row mb-3 mt-3">
+                <label for="inputDescription" class="col-sm-2 col-form-label"
+                  >Descrição</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputDescription"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3 mt-3">
+                <label for="inputPrice" class="col-sm-2 col-form-label"
+                  >Preço</label
+                >
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputPrice" />
+                </div>
+                <label for="inputPrice" class="col-sm-2 col-form-label"
+                  >Categoria</label
+                >
+                <div class="col-sm-4">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1">Produção Própria</option>
+                    <option value="2">Nacional</option>
+                    <option value="3">Importado</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3 mt-3">
+                <label class="col-sm-2 col-form-label"
+                  >Opções</label
+                >
+                <div class="col-sm-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkboxPromotion"
+                    />
+                    <label class="form-check-label" for="checkboxPromotion">
+                      Promoção
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="checkboxNewProduct"
+                      checked
+                    />
+                    <label class="form-check-label" for="checkboxNewProduct">
+                      Lançamento
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3 mt-3">
+                <div class="col-sm-4">
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section><div class="display-6">Produtos Cadastrados:</div></section>
     </main>
     <footer class="fixed-bottom bg-secondary text-center text-white">
       @Sistemas P&D
