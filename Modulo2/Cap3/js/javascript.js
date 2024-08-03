@@ -1,5 +1,9 @@
 $("#inputPrice").mask("999.999.999.999.999,99", { reverse: true });
 
+function convertToNumber(priceFormat){
+  return priceFormat.replace(/\./g,'').replace(',','.');
+}
+
 var products = [
   {
     id: 1,
@@ -43,7 +47,7 @@ function save() {
     id: products.length + 1,
     name: document.getElementById("inputName").value,
     description: document.getElementById("inputDescription").value,
-    price: document.getElementById("inputPrice").value,
+    price: convertToNumber(document.getElementById("inputPrice").value),
     category: document.getElementById("selectCategory").value,
     promotion: document.getElementById("checkBoxPromotion").checked,
     new: document.getElementById("checkBoxNewProduct").checked
@@ -73,7 +77,9 @@ function addNewRow(prod) {
   newRow.insertCell().appendChild(nameNode);
 
   var descriptionNode = document.createTextNode(prod.description);
-  newRow.insertCell().appendChild(descriptionNode);
+  var cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.appendChild(descriptionNode);
 
   var formatter = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -97,5 +103,7 @@ function addNewRow(prod) {
     options += '<span class="badge bg-primary">L</span>';
   }
 
-  newRow.insertCell().innerHTML = options;
+  cell = newRow.insertCell();
+  cell.className="d-none d-md-table-cell";
+  cell.innerHTML = options;
 }
