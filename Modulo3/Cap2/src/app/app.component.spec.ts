@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'bootcamp-devjr-modulo3-book' title`, () => {
+  it(`should have the 'Cap2' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('bootcamp-devjr-modulo3-book');
+    expect(app.title).toEqual('Cap2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, bootcamp-devjr-modulo3-book');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Cap2');
   });
 });
