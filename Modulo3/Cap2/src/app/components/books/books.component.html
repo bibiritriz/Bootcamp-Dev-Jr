@@ -1,0 +1,38 @@
+<div class="container">
+  <h3>Livros Cadastrados</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Título
+        </th>
+        <th>
+          Autor
+        </th>
+        <th>
+          Preço
+        </th>
+      </tr>
+    </thead>
+
+    <body>
+      <tr *ngFor="let book of books">
+        <td>
+          {{book.id}}
+        </td>
+        <td>
+          {{book.title}}
+        </td>
+        <td>
+          {{book.author}}
+        </td>
+        <td>
+          {{book.price}}
+        </td>
+      </tr>
+    </body>
+  </table>
+</div>
