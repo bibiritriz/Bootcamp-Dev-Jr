@@ -1,14 +1,36 @@
-<div class="row text-center">
-  <div class="col">
-    {{book.id}}
-  </div>
-  <div class="col">
-    {{book.title}}
-  </div>
-  <div class="col">
-    {{book.author | uppercase}}
-  </div>
-  <div class="col">
-    {{book.price}}
-  </div>
+<div class="container">
+  <h3>
+    Cadastrar Livros
+  </h3>
+  <form>
+    <div class="row">
+      <label for="title" class="col-form-label">
+        Título
+      </label>
+      <div>
+        <input type="text" class="form-control" name="title" id="title" required>
+      </div>
+    </div>
+    <div class="row">
+      <label for="author" class="col-form-label">
+        Autor
+      </label>
+      <div>
+        <input type="text" class="form-control" name="author" id="author" required>
+      </div>
+    </div>
+    <div class="row">
+      <label for="price" class="col-form-label">
+        Preço
+      </label>
+      <div>
+        <input type="number" class="form-control" name="price" id="price" required>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div>
+        <button class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </form>
 </div>

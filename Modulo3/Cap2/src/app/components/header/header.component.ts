@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { BookComponent } from '../book/book.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [BookComponent],
+  imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
