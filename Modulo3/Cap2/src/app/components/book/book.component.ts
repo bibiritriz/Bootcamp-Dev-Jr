@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Book } from '../../Book';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -11,10 +11,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-  book: Book = {
-    id: 1,
-    title: "Angular",
-    author: "Beatriz Camargo",
-    price: 50.00
-  };
+  @Input()
+  book: Book = {} as Book;
+
+  @Output()
+  saveEmitter = new EventEmitter();
+  save() {
+    this.saveEmitter.emit();
+  }
 }

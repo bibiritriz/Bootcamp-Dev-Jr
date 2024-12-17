@@ -1,3 +1,5 @@
+<app-book [book]="book" (saveEmitter)="saveBook()"></app-book>
+
 <div class="container">
   <h3>Livros Cadastrados</h3>
   <table class="table">
@@ -15,10 +17,13 @@
         <th>
           Preço
         </th>
+        <th class="text-center w-25">
+          Opções
+        </th>
       </tr>
     </thead>
 
-    <body>
+    <tbody>
       <tr *ngFor="let book of books">
         <td>
           {{book.id}}
@@ -26,13 +31,17 @@
         <td>
           {{book.title}}
         </td>
-        <td>
+        <td #nameBook>
           {{book.author}}
         </td>
         <td>
           {{book.price}}
         </td>
+        <td class="text-center">
+          <button class="btn btn-success me-2" (click)="update(book)">Alterar</button>
+          <button class="btn btn-danger me-2" (click)="remove(book)">Remover</button>
+        </td>
       </tr>
-    </body>
+    </tbody>
   </table>
 </div>
